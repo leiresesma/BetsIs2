@@ -1,0 +1,102 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:p="http://primefaces.org/ui">
+<f:view>
+    <h:head>
+    	<style>
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+                background-color: #f0f0f0;
+            }
+            h3 {
+                color: #333;
+            }
+            table {
+                width: 100%;
+                max-width: 600px;
+                margin: 20px auto;
+                background-color: #fff;
+                border-collapse: collapse;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            }
+            td {
+                padding: 10px;
+                border: 1px solid #ccc;
+            }
+            td[colspan="2"] {
+                text-align: center;
+            }
+            input, select {
+                width: 100%;
+                padding: 8px;
+                box-sizing: border-box;
+            }
+            .buttons {
+                text-align: center;
+                margin-top: 20px;
+            }
+            .buttons h:commandButton {
+                margin: 0 5px;
+            }
+        </style>
+        <title>Aplicación JavaServer Faces</title>
+    </h:head>
+    <h:body>
+        <h:form>
+   
+            <h3>Create Questions</h3>
+            <table>
+              
+                <tr>
+                    <td colspan="2">
+                        <h:commandButton value="getEvents" action="#{CreateBean1.getEventosDay}" />
+                    </td>
+                    <td><h:commandButton value="Create Question"
+							action="#{CreateBean1.createQuestion}" /></td>
+                </tr>
+                
+                
+                <tr>
+                    <td colspan="2">
+                        <p:calendar id="fecha" navigator="false" mode="inline">
+                            <p:ajax event="dateSelect" listener="#{CreateBean1.onDateSelect}" />
+                        </p:calendar>
+                    </td>
+                </tr>
+                
+     
+                <tr>
+                    <td><h3>Elegir evento</h3></td>
+                    <td>
+                        <h:selectOneMenu value="#{CreateBean1.eventString}">
+                            <f:selectItems value="#{CreateBean1.eventos}" var="evento" itemValue="#{evento.eventNumber}" itemLabel="#{evento.description}" />
+                            <p:ajax event="valueChange" listener="#{CreateBean1.onEventSelect}"/>
+                        </h:selectOneMenu>
+                    </td>
+                </tr>
+                <tr>
+					<td>Descripción:</td>
+					<td><h:inputText id="descripcion"
+							value="#{CreateBean1.descripcion}">
+						</h:inputText></td>
+				</tr>
+				<tr>
+					<td>Min bet:</td>
+					<td><h:inputText id="minbet" value="#{CreateBean1.minbet}">
+						</h:inputText></td>
+				</tr>
+                
+            </table>
+             <h:commandButton value="Volver a inicio"
+							action="#{CreateBean1.volverInicio}" />
+        </h:form>
+       
+    </h:body>
+</f:view>
+</html>

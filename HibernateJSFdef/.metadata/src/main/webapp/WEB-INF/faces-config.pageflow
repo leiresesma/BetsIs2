@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pageflow:Pageflow xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pageflow="http://www.sybase.com/suade/pageflow" id="pf17184545182370" configfile="/HibernateJSFdef/src/main/webapp/WEB-INF/faces-config.xml">
+  <nodes xsi:type="pageflow:PFPage" name="inicio.xhtml" x="374" y="246" id="pf17184549304291" referenceLink="//@navigationRule.3/@navigationCase.0/@toViewId|" outlinks="pf17184549304292 pf17184549304293" inlinks="pf17184549304294 pf17184549304295" path="/inicio.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="createQuestions.xhtml" x="680" y="142" id="pf17184549304306" referenceLink="//@navigationRule.3/@fromViewId|" outlinks="pf17184549304295" inlinks="pf17184549304293" path="/createQuestions.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="queryQuestions.xhtml" x="712" y="342" id="pf17184549304307" referenceLink="//@navigationRule.1/@fromViewId|" outlinks="pf17184549304294" inlinks="pf17184549304292" path="/queryQuestions.xhtml"/>
+  <links id="pf17184549304292" target="pf17184549304307" source="pf17184549304291" outcome="query"/>
+  <links id="pf17184549304294" target="pf17184549304291" source="pf17184549304307" outcome="inicio"/>
+  <links id="pf17184549304293" target="pf17184549304306" source="pf17184549304291" outcome="create"/>
+  <links id="pf17184549304295" target="pf17184549304291" source="pf17184549304306" outcome="inicio"/>
+</pageflow:Pageflow>

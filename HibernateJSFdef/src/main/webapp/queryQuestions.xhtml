@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:p="http://primefaces.org/ui">
+<f:view>
+    <h:head>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+                background-color: #f0f0f0;
+            }
+            h3 {
+                color: #333;
+            }
+            table {
+                width: 100%;
+                max-width: 600px;
+                margin: 20px auto;
+                background-color: #fff;
+                border-collapse: collapse;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            }
+            td {
+                padding: 10px;
+                border: 1px solid #ccc;
+            }
+            td[colspan="2"] {
+                text-align: center;
+            }
+            input, select {
+                width: 100%;
+                padding: 8px;
+                box-sizing: border-box;
+            }
+            .buttons {
+                text-align: center;
+                margin-top: 20px;
+            }
+            .buttons h:commandButton {
+                margin: 0 5px;
+            }
+        </style>
+        <title>Aplicación JavaServer Faces</title>
+    </h:head>
+    <h:body>
+        <h:form>
+            <h3>Query Questions</h3>
+            <table>
+                <tr>
+                    <td colspan="2">
+                        <h:commandButton value="getEvents" action="#{QueryBean1.getEventosDay}" />
+                    </td>
+                    <td>
+                        <h:commandButton value="Query Questions" action="#{QueryBean1.queryQuestion}" />
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <p:calendar id="fecha" navigator="false" mode="inline">
+                            <p:ajax event="dateSelect" listener="#{QueryBean1.onDateSelect}" />
+                        </p:calendar>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h3>Elegir evento</h3>
+                    </td>
+                    <td>
+                        <h:selectOneMenu value="#{QueryBean1.eventString}">
+                            <f:selectItems value="#{QueryBean1.eventos}" var="evento" itemValue="#{evento.eventNumber}" itemLabel="#{evento.description}" />
+                            <p:ajax event="valueChange" listener="#{QueryBean1.onEventSelect}" />
+                        </h:selectOneMenu>
+                    </td>
+                </tr>
+            </table>
+            <table border="1">
+                <tr>
+                    <th>Question ID</th>
+                    <th>Description</th>
+                </tr>
+                <ui:fragment rendered="#{not empty QueryBean1.questions}">
+                    <ui:repeat value="#{QueryBean1.questions}" var="question">
+                        <tr>
+                            <td>#{question.questionNumber}</td>
+                            <td>#{question.question}</td>
+                        </tr>
+                    </ui:repeat>
+                </ui:fragment>
+                <ui:fragment rendered="#{empty QueryBean1.questions and not empty QueryBean1.eventos}">
+                    <tr>
+                        <td colspan="2"></td>
+                    </tr>
+                </ui:fragment>
+                <ui:fragment rendered="#{empty QueryBean1.questions and empty QueryBean1.eventos}">
+                    <tr>
+                        <td colspan="2">No hay eventos disponibles para este día.</td>
+                    </tr>
+                </ui:fragment>
+            </table>
+            <h:commandButton value="Volver a inicio" action="#{QueryBean1.volverInicio}" />
+        </h:form>
+    </h:body>
+</f:view>
+</html>
