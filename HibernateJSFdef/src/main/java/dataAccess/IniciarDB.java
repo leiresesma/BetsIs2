@@ -9,30 +9,6 @@ import java.util.*;
 
 public class IniciarDB {
 
-	public IniciarDB() {
-
-	}
-
-	private void createAndStoreEvento(int l, String descripcion, Date fecha) {
-		Session session = HibernateDataAccess.getSessionFactory().getCurrentSession();
-		session.beginTransaction();
-		Event e = new Event();
-		e.setEventNumber(l);
-		e.setDescription(descripcion);
-		e.setEventDate(fecha);
-		session.save(e);
-		session.getTransaction().commit();
-	}
-	
-	
-	private List listaEventos() {
-		Session session = HibernateDataAccess.getSessionFactory().getCurrentSession();
-		session.beginTransaction();
-		List result = session.createQuery("from Event").list();
-		session.getTransaction().commit();
-		return result;
-	}
-	
 	private List listaQuestions() {
 		Session session = HibernateDataAccess.getSessionFactory().getCurrentSession();
 		session.beginTransaction();
@@ -41,22 +17,6 @@ public class IniciarDB {
 		return result;
 	}
 
-	public void prueba() {
-		IniciarDB e = new IniciarDB();
-		System.out.println("Creación de eventos:");
-		e.createAndStoreEvento(1, "Pepe ha hecho login correctamente", new Date());
-		e.createAndStoreEvento(2, "Nerea ha intentado hacer login", new Date());
-		e.createAndStoreEvento(3, "Kepa ha hecho login correctamente", new Date());
-		System.out.println("Listado de eventos:");
-
-		List eventos = e.listaEventos();
-		for (int i = 0; i < eventos.size(); i++) {
-			Event ev = (Event) eventos.get(i);
-			System.out
-					.println("Id: " + ev.getEventNumber() + " Descripcion: " + ev.getDescription() + " Fecha: " + ev.getEventDate());
-		}
-	}
-	
 	public static void main(String[] args) {
 		IniciarDB e = new IniciarDB();
 		System.out.println("Creación de eventos:");

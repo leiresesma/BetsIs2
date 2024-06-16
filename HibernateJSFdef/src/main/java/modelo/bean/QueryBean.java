@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 import java.util.Date;
 import java.util.List;
-import java.util.List;
+
 
 import javax.faces.application.FacesMessage;
 import javax.faces.bean.ManagedBean;
@@ -94,7 +94,7 @@ public class QueryBean {
         Event seleccionado = null;
         try {
             for (Event i : eventos) {
-                int evInt = Integer.valueOf(eventString);
+                int evInt = Integer.parseInt(eventString);
                 if (evInt == i.getEventNumber()) {
                     seleccionado = i;
                 }

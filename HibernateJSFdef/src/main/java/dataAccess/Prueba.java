@@ -17,7 +17,7 @@ public class Prueba {
 		Vector<Event> eventos = blf.getEvents(new Date());
 		
 		for(int i =0; i < eventos.size(); i++) {
-			Event ev = (Event) eventos.get(i);
+			Event ev = eventos.get(i);
 			System.out.println(ev.getEventNumber());
 		}
 		

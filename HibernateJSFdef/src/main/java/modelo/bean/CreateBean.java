@@ -3,7 +3,7 @@ package modelo.bean;
 
 
 import java.util.Date;
-import java.util.Vector;
+import java.util.List;
 
 import javax.faces.application.FacesMessage;
 import javax.faces.context.FacesContext;
@@ -21,7 +21,7 @@ import org.primefaces.event.SelectEvent;
 public class CreateBean {
 
 	
-	private Vector<Event> eventos;
+	private List<Event> eventos;
 	private BLFacadeImplementation blf;
 	private Date date = null;
 	private Event event;
@@ -53,11 +53,11 @@ public class CreateBean {
 		this.event = event;
 	}
 
-	public Vector<Event> getEventos() {
+	public List<Event> getEventos() {
 		return eventos;
 	}
 
-	public void setEventos(Vector<Event> eventos) {
+	public void setEventos(List<Event> eventos) {
 		this.eventos = eventos;
 	}
 
@@ -105,7 +105,7 @@ public class CreateBean {
 		try {
 			
 			for (Event i : eventos) {
-				int evInt = Integer.valueOf(eventString);
+				int evInt = Integer.parseInt(eventString);
 				if(evInt == i.getEventNumber()) {
 					seleccionado = i;
 				}
