@@ -1,0 +1,7 @@
+organization=leiresesma
+projectKey=leiresesma_BetsIs2
+serverUrl=https://sonarcloud.io
+serverVersion=8.0.0.55129
+dashboardUrl=https://sonarcloud.io/dashboard?id=leiresesma_BetsIs2
+ceTaskId=AZAhPhMSz1uijYMzmUMS
+ceTaskUrl=https://sonarcloud.io/api/ce/task?id=AZAhPhMSz1uijYMzmUMS

@@ -1,0 +1,6 @@
+modelo.bean.QueryBean#<init>()V
+modelo.bean.Inicio#getBLF()LbusinessLogic/BLFacadeImplementation;
+java.util.Date#<init>()V
+java.util.Date#instance-init#
+==
+getEvents businessLogic.BLFacadeImplementation#getEvents(Ljava/util/Date;)Ljava/util/Vector;

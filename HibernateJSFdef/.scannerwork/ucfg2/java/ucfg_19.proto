@@ -1,0 +1,152 @@
+
+(domain.Event#equals(Ljava/lang/Object;)ZT
+JC:/Users/34671/git/BetsIs2/HibernateJSFdef/src/main/java/domain/Event.javaw w("startingBlock*%
+2
+Ä
+ Ä("
+
+Ä Ä(
+""*í
+3~ ~(`
+^
+~ ~(
+otherdomain.Event"__id*5
+
+__unknown_file (
+
+objjava.lang.Objectj
+h
+ (
+%5java.lang.Integer"__id*=
+
+__unknown_file (!*
+domain.Event"
+eventNumberq
+o
+ (&
+%6java.lang.Integer"__id*D
+
+__unknown_file ((*&
+
+otherdomain.Event"
+eventNumberπ
+∂
+ (&
+%7boolean"	__compare*"
+
+__unknown_file (
+!=*5
+
+__unknown_file (
+
+%5java.lang.Integer*5
+
+__unknown_file (
+
+%6java.lang.Integer*
+2
+1*Ñ
+startingBlockw w("ä
+á
+v v(
+
+%8"
+__annotate*2
+
+__unknown_file (
+java.lang.Override*5
+
+__unknown_file (
+
+objjava.lang.ObjectW
+U
+w w(!
+objjava.lang.Object"__annotation*"
+
+__unknown_file (
+
+%8*
+9*!
+4}
+ }("
+} }(
+""*Ù
+5| |(åâ
+| |(
+%2java.lang.Class",java.lang.Object#getClass()Ljava/lang/Class;*,
+
+__unknown_file (
+domain.Event2
+getClass()ïí
+| |("
+%3java.lang.Class",java.lang.Object#getClass()Ljava/lang/Class;*5
+
+__unknown_file (
+
+objjava.lang.Object2
+getClass()µ
+≤
+| |("
+%4boolean"	__compare*"
+
+__unknown_file (
+!=*3
+
+__unknown_file (
+
+%2java.lang.Class*3
+
+__unknown_file (
+
+%3java.lang.Class*
+3
+4*!
+6{
+ {("
+{ {(
+""*æ
+7z z(	¶
+£
+z z(
+%1boolean"	__compare*"
+
+__unknown_file (
+==*5
+
+__unknown_file (
+
+objjava.lang.Object*"
+
+__unknown_file (
+""*
+5
+6*!
+8y
+ y("
+y y(
+""*»
+9x x(
+∞
+≠
+x x(
+%0boolean"	__compare*"
+
+__unknown_file (
+==*,
+
+__unknown_file (
+domain.Event*5
+
+__unknown_file (
+
+objjava.lang.Object*
+7
+8*%
+1
+Å	 Å("
+
+Å Å(
+"":#
+w w(!
+objjava.lang.ObjectB
+domain.EventHX

@@ -1,0 +1,83 @@
+
+,domain.Question#toString()Ljava/lang/String;Y
+MC:/Users/34671/git/BetsIs2/HibernateJSFdef/src/main/java/domain/Question.java‡ ‡("1*«
+1
+ˆ	 ˆ(r
+p
+
+ˆ	 ˆ(
+%0java.lang.Integer"__id*C
+
+__unknown_file ('*%
+domain.Question"
+questionNumbern
+l
+
+ˆ	 ˆ(
+%1java.lang.String"__concat*'
+
+ˆ	 ˆ(
+
+%0java.lang.Integer*
+
+ˆ ˆ(
+;k
+i
+
+ˆ  ˆ((
+%2java.lang.String"__id*=
+
+__unknown_file (!*
+domain.Question"
+
+question€
+~
+
+ˆ	 ˆ((
+%3java.lang.String"__concat*&
+
+ˆ	 ˆ(
+
+%1java.lang.String*&
+
+ˆ  ˆ((
+
+%2java.lang.Stringm
+k
+
+ˆ	 ˆ(.
+%4java.lang.String"__concat*&
+
+ˆ	 ˆ((
+
+%3java.lang.String*
+
+ˆ+ ˆ(.
+;«
+¨
+
+ˆ1 ˆ(K
+%5java.lang.String"-java.lang.Float#toString(F)Ljava/lang/String;*/
+
+__unknown_file ("
+java.lang.Float*"
+
+__unknown_file (
+""€
+~
+
+ˆ	 ˆ(K
+%6java.lang.String"__concat*&
+
+ˆ	 ˆ(.
+
+%4java.lang.String*&
+
+ˆ1 ˆ(K
+
+%5java.lang.String"&
+
+ˆ ˆ(L
+
+%6java.lang.StringB
+domain.QuestionH

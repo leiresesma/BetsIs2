@@ -1,0 +1,9 @@
+modelo.bean.QueryBean#queryQuestion()V
+java.util.ArrayList#<init>()V
+java.util.ArrayList#instance-init#
+==
+getQuestionNumber domain.Question#getQuestionNumber()Ljava/lang/Integer;
+getQuestions domain.Event#getQuestions()Ljava/util/List;
+println java.io.PrintStream#println(Ljava/lang/String;)V
+getQuestion domain.Question#getQuestion()Ljava/lang/String;
+datosEventoSelec modelo.bean.QueryBean#datosEventoSelec()V

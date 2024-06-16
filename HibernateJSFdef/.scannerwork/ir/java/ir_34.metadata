@@ -1,0 +1,2 @@
+dataAccess.IniciarDB#listaQuestions()Ljava/util/List;
+dataAccess.HibernateDataAccess#getSessionFactory()LSessionFactory;

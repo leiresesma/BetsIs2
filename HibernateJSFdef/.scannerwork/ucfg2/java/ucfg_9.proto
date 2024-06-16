@@ -1,0 +1,15 @@
+
+0domain.Event#getEventNumber()Ljava/lang/Integer;T
+JC:/Users/34671/git/BetsIs2/HibernateJSFdef/src/main/java/domain/Event.java2 2("1* 
+13	 3(j
+h
+3	 3(
+%0java.lang.Integer"__id*=
+
+__unknown_file (!*
+domain.Event"
+eventNumber"%
+3 3(
+
+%0java.lang.IntegerB
+domain.EventH

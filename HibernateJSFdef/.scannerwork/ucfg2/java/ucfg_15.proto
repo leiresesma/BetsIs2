@@ -1,0 +1,39 @@
+
+)domain.Event#toString()Ljava/lang/String;T
+JC:/Users/34671/git/BetsIs2/HibernateJSFdef/src/main/java/domain/Event.javaK K("1*ð
+1L	 L(j
+h
+L	 L(
+%0java.lang.Integer"__id*=
+
+__unknown_file (!*
+domain.Event"
+eventNumberh
+f
+L	 L(
+%1java.lang.String"__concat*%
+L	 L(
+
+%0java.lang.Integer*
+L L(
+;i
+g
+L L($
+%2java.lang.String"__id*=
+
+__unknown_file (!*
+domain.Event"
+descriptionz
+x
+L	 L($
+%3java.lang.String"__concat*$
+L	 L(
+
+%1java.lang.String*$
+L L($
+
+%2java.lang.String"$
+L L(%
+
+%3java.lang.StringB
+domain.EventH

@@ -1,0 +1,5 @@
+modelo.bean.CreateBean#getEventosDay()V
+==
+getEvents businessLogic.BLFacadeImplementation#getEvents(Ljava/util/Date;)Ljava/util/Vector;
+println java.io.PrintStream#println(Ljava/lang/String;)V
+size java.util.List#size()I

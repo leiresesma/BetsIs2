@@ -1,0 +1,20 @@
+
+5dataAccess.IniciarDB#listaQuestions()Ljava/util/List;\
+RC:/Users/34671/git/BetsIs2/HibernateJSFdef/src/main/java/dataAccess/IniciarDB.java ("1*¡
+1 ('—
+”
+ (;
+%0"BdataAccess.HibernateDataAccess#getSessionFactory()LSessionFactory;*>
+
+__unknown_file ("" 
+dataAccess.HibernateDataAccessP
+N
+ (<
+resultjava.util.List"__id*"
+
+__unknown_file (
+"""&
+ (
+
+resultjava.util.ListB
+dataAccess.IniciarDB

@@ -1,0 +1,4 @@
+modelo.bean.QueryBean#onDateSelect(LSelectEvent;)V
+null
+==
+getEventosDay modelo.bean.QueryBean#getEventosDay()V

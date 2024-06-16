@@ -1,0 +1,7 @@
+businessLogic.BLFacadeImplementation#createQuestion(Ldomain/Event;Ljava/lang/String;F)Ldomain/Question;
+java.lang.String#replace(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/String;
+dataAccess.HibernateDataAccess#getSessionFactory()LSessionFactory;
+==
+println java.io.PrintStream#println(Ljava/lang/String;)V
+addQuestion domain.Event#addQuestion(Ljava/lang/String;F)Ldomain/Question;
+size java.util.List#size()I

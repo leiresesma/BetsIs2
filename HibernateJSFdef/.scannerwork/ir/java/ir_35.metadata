@@ -1,0 +1,22 @@
+dataAccess.IniciarDB#main([Ljava/lang/String;)V
+java.util.ArrayList#<init>()V
+dataAccess.IniciarDB#instance-init#
+java.util.Date#<init>()V
+dataAccess.IniciarDB#listaQuestions()Ljava/util/List;
+java.util.ArrayList#instance-init#
+domain.Event#<init>(Ljava/lang/Integer;Ljava/lang/String;Ljava/util/Date;)V
+dataAccess.HibernateDataAccess#getSessionFactory()LSessionFactory;
+java.util.Date#instance-init#
+domain.Event#instance-init#
+domain.Question#<init>(Ljava/lang/Integer;Ljava/lang/String;FLdomain/Event;)V
+dataAccess.IniciarDB#<init>()V
+domain.Question#instance-init#
+==
+getBetMinimum domain.Question#getBetMinimum()F
+getQuestionNumber domain.Question#getQuestionNumber()Ljava/lang/Integer;
+setQuestions domain.Event#setQuestions(Ljava/util/List;)V
+println java.io.PrintStream#println(Ljava/lang/String;)V
+add java.util.List#add(Ljava/lang/Object;)Z
+get java.util.List#get(I)Ljava/lang/Object;
+getQuestion domain.Question#getQuestion()Ljava/lang/String;
+size java.util.List#size()I
