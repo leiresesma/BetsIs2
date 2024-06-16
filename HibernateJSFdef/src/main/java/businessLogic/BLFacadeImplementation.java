@@ -37,7 +37,7 @@ public class BLFacadeImplementation implements BLFacade {
 	public Question createQuestion(Event event, String question, float betMinimum)
 			throws EventFinished, QuestionAlreadyExist {
 
-		System.out.println("Crear pregunta");
+
 
 		Session session = HibernateDataAccess.getSessionFactory().getCurrentSession();
 		session.beginTransaction();
@@ -45,7 +45,7 @@ public class BLFacadeImplementation implements BLFacade {
 		String q = question.replace("'", "''");
 		List list = session.createQuery("from Question where question = '" + q + "'").list();
 		if (list.size() > 0) {
-			System.out.println("La pregunta ya existe para este evento");
+		
 			session.getTransaction().rollback();
 			return null;
 		} else {
@@ -65,7 +65,7 @@ public class BLFacadeImplementation implements BLFacade {
 	 */
 
 	public Vector<Event> getEvents(Date date) {
-		System.out.println("Coger Eventos");
+
 
 		Session session = HibernateDataAccess.getSessionFactory().getCurrentSession();
 		session.beginTransaction();
@@ -73,19 +73,19 @@ public class BLFacadeImplementation implements BLFacade {
 		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
 		sdf.format(date);
 		LocalDate localDate = date.toInstant().atZone(ZoneId.systemDefault()).toLocalDate();
-		System.out.println("Dia: " + localDate.getYear() + localDate.getMonthValue() + localDate.getDayOfMonth());
+
 		List l = session
 				.createQuery("from Event where YEAR(eventDate) = " + localDate.getYear() + " and MONTH(eventDate) = "
 						+ localDate.getMonthValue() + " and DAY(eventDate) = " + localDate.getDayOfMonth())
 				.list();
-		System.out.println("Dias: " + l.size());
+
 		Vector<Event> eventos = new Vector<Event>();
 		for (int i = 0; i < l.size(); i++) {
 			Event ev = (Event) l.get(i);
 			eventos.add(ev);
 		}
 		session.getTransaction().commit();
-		;
+
 		return eventos;
 
 	}
@@ -100,7 +100,7 @@ public class BLFacadeImplementation implements BLFacade {
 
 	public Vector<Date> getEventsMonth(Date date) {
 
-		System.out.println("Coger Eventos");
+
 
 		Session session = HibernateDataAccess.getSessionFactory().getCurrentSession();
 		session.beginTransaction();
